@@ -1,0 +1,158 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Body background */
+body {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url("Assets/bc.png") center/cover no-repeat fixed;
+    flex: 1;
+}
+
+/* Header */
+header {
+    position: absolute;
+    top: 26px;
+    left: 190px;
+    z-index: 10;
+}
+
+/* Main */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Login box */
+.login {
+    background: rgba(0, 0, 0, 0.75);
+    padding: 60px;
+    border-radius: 4px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.login h2 {
+    margin-bottom: 20px;
+}
+
+/* Form */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    background: #333;
+    color: #fff;
+}
+
+.login-form input::placeholder {
+    color: #999;
+}
+
+
+
+
+/* extra */
+
+.extra {
+    font-size: 10px;
+}
+
+
+/* Buttons */
+.btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    border: none;
+    background: #e50914;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 6px;
+}
+
+.btn:hover {
+    filter: brightness(0.9);
+}
+
+/* Or section */
+.or {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #141414;
+    color: #999;
+    font-size: 14px;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+footer p {
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* spacing between lines */
+}
+
+.footer-links ul {
+    display: flex;
+    gap: 30px; /* spacing between items */
+    list-style: none;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #999;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.footer-lang select {
+    background-color: #141414;
+    color: #999;
+    border: 1px solid #333;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+
+a {
+    color: #999;
+}
